@@ -1,0 +1,7 @@
+must not exceed one page;
+must identify the members of the group with an estimate of each element's contribution to the work. For
+example, Peter: 60%, John: 40%, along with a short justification;
+must contain a brief description of your options;
+must contain comments on the viability of your solution (is usable?);
+must contain a brief analysis of the usability of the "inverted" metaphoneLN transducer, with a maximum
+of half a pa
