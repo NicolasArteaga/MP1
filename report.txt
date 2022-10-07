@@ -5,3 +5,11 @@ must contain a brief description of your options;
 must contain comments on the viability of your solution (is usable?);
 must contain a brief analysis of the usability of the "inverted" metaphoneLN transducer, with a maximum
 of half a pa
+
+
+step 1: Step 1 is not tested:
+
+Step 2: Step two is tested
+
+Step 3:
+	Step 3 still has to be corrected
