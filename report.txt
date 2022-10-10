@@ -1,15 +1,43 @@
-must not exceed one page;
-must identify the members of the group with an estimate of each element's contribution to the work. For
-example, Peter: 60%, John: 40%, along with a short justification;
-must contain a brief description of your options;
-must contain comments on the viability of your solution (is usable?);
-must contain a brief analysis of the usability of the "inverted" metaphoneLN transducer, with a maximum
-of half a pa
+########################################################################
+				NL MP1 project
+			Joao Gomes Mauricio 98530
+			Nicolas Arteaga Garcia 105495
+########################################################################
+
+#Contributions:
+Joao Contributed 50% of this project and Nicolas Arteaga 50%. We both did all steps back home and
+met to discuss them. Then both tested the transducers with different test cases back home.
+We created the metaphone and the inverted metaphone all together in our last meeting thanks to the
+lecture slides.
 
 
-step 1: Step 1 is not tested:
+#STEPS Explanations:
+The solutions for the steps were basicaly the same for each one of them. We had the 
+general case (Accepting all words) and then we divided them in small cases distributed 
+for each state(or states) of the transducer. So we applied the changes required for each step.
 
-Step 2: Step two is tested
+!Note! : Step 9 has the same content as StepX, but weirdly StepX is working and 9 isn't. After much
+testing we could not explain it, so we are sending both files. (Same testing in line 129 run.sh) 
 
-Step 3:
-	Step 3 still has to be corrected
+#MetaphoneLN: 
+	We created the metaphone by making a Composition of all transducer steps. (line 26 run.sh)
+
+#InvertMethaphoneLN:
+	We were able to invert our metaphone with the fstinvert command. (line 41 run.sh)
+
+#Metaphone Analysis
+	Our Metaphone is usable and error free. It uses the 9 steps like a phonetic algorithm to
+	associate the input with a word that sounds similar. To use write the word in a t-*.str file
+	in the test folder as explained in the lab.
+
+#Analysis of the usability of the "inverted" metaphoneLN transducer:
+	The inverted metaphone cannot really recover the word state before it went in the metaphone.
+	Since the transducer loses the information and generalizes. For example the word "JRFSK" can 
+	represent Jurafsky, Jarofsky, Jarovsky e Jarovski so the inverted metaphone cannot go back
+	to one of those.
+	Another example would be NN that represents Nuno, Nunu, Nonu, Nono.
+	In our Names example, "NICOLASGARCIA" went to "NCLSGRKS" but the inverted metaphone delivered
+	"NACLSGRRX". "JOAOMAURICIO" -> "JMRKS" --inverted--> "JAMRRX".
+	With testing we could see that the inverted metaphone always delivered a vowel "A"
+	between the first two consonants, probably because of the inversion of Step 9 which
+	droped most vowels previously. 

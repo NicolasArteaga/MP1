@@ -1,0 +1,57 @@
+0 0 [A-Z0] = 1
+0 2 [A-Z0] = 1
+0 1 A =
+1 2 A eps
+0 3 B =
+3 2 B eps
+0 4 C =
+4 2 C =
+0 5 D =
+5 2 D eps
+0 6 E =
+6 2 E eps
+0 7 F =
+7 2 F eps
+0 8 G =
+8 2 G eps
+0 9 H =
+9 2 H eps
+0 10 I =
+10 2 I eps
+0 11 J =
+11 2 J eps
+0 12 K =
+12 2 K eps
+0 13 L =
+13 2 L eps
+0 14 M =
+14 2 M eps
+0 15 N =
+15 2 N eps
+0 16 O =
+16 2 O eps
+0 17 P =
+17 2 P eps
+0 18 Q =
+18 2 Q eps
+0 19 R =
+19 2 R eps
+0 20 S =
+20 2 S eps
+0 21 T =
+21 2 T eps
+0 22 U =
+22 2 U eps
+0 23 V =
+23 2 V eps
+0 24 W =
+24 2 W eps
+0 25 X =
+25 2 X eps
+0 26 Y =
+26 2 Y eps
+0 27 Z =
+27 2 Z eps
+2 2 [A-Z0] = 1
+2
+
